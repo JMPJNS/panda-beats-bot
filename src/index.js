@@ -11,7 +11,7 @@ client.on("ready", () => {
 
 client.on("message", msg => {
     const b = msg.mentions.users.get("784474273683210241")
-    if (b) {
+    if (b || msg.content.toLowerCase().replace(/\s/g, "") == "pandabeats") {
         const em = new Discord.MessageEmbed()
             .setColor("#B1A9FE")
             .setTitle("Hier Panda Beats hören")
